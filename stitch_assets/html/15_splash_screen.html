@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>The Crew - Splash</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            surface: {
+              DEFAULT: '#0A0A0B',
+              card: '#131315',
+              container: '#18181B',
+              border: '#27272A',
+            },
+            accent: {
+              mint: '#CFFFE2',
+              sage: '#A2D5C6',
+            },
+            text: {
+              primary: '#F6F6F6',
+              secondary: '#A1A1AA',
+              muted: '#71717A',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#0A0A0B] text-[#F6F6F6] font-sans antialiased h-full flex flex-col justify-between items-center p-6 selection:bg-[#CFFFE2] selection:text-[#0A0A0B] overflow-hidden relative">
+
+  <!-- Subtle atmospheric background elements -->
+  <div class="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top,_rgba(207,255,226,0.03)_0%,_transparent_70%)]"></div>
+
+  <!-- Top bar / Network indicator -->
+  <header class="w-full pt-4 flex justify-between items-center z-10">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#131315] border border-[#27272A]">
+      <span class="w-2 h-2 rounded-full bg-[#CFFFE2] animate-pulse"></span>
+      <span class="text-xs font-semibold tracking-wider text-[#A2D5C6] uppercase">Network v2.4</span>
+    </div>
+    <div class="text-xs text-[#71717A] font-medium tracking-tight">
+      LATENCY <span class="text-[#F6F6F6] font-mono">18ms</span>
+    </div>
+  </header>
+
+  <!-- Centered Hero Branding Frame -->
+  <main class="w-full max-w-sm my-auto flex flex-col items-center text-center z-10">
+    <!-- Structured Brand Frame -->
+    <div class="relative w-full p-8 rounded-3xl bg-[#131315] border border-[#27272A] shadow-2xl flex flex-col items-center">
+      
+      <!-- Top Subtle Status Pill -->
+      <div class="mb-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#18181B] border border-[#27272A] text-[11px] font-semibold text-[#A1A1AA]">
+        <svg class="w-3.5 h-3.5 text-[#CFFFE2]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+        <span>SPATIAL CHAT & COMMUNITY</span>
+      </div>
+
+      <!-- Centered Flat Minimal Brand Logo Mark -->
+      <div class="relative w-28 h-28 mb-6 flex items-center justify-center">
+        <!-- Logo Image Container with crisp 1px accent border -->
+        <div class="w-24 h-24 rounded-2xl bg-[#0A0A0B] border border-[#27272A] p-2 flex items-center justify-center relative shadow-inner">
+          <img src="https://lh3.googleusercontent.com/aida/AEtjO1VSVZUyOLiNgLfqh243EGJ-hcYDxGbnYrrtoqTMFibT-bK62CjUpdqO6Wyc0ckW1z4hkX0Qzo-9ju17l-PxUKi4sfO08YQ677_99kyMuM3Di8vwG0NnhCML5i3x2LRIwCU1KYeez9kmvYEFnRlWPPEcDvnu88EwC9yS3tlsopH-roext_k-IAbwEGlz6J89Vf9JoRVM_YH8ab9pFGXTi98JKJV2-vxxtjNhzNClWF4YeiHeRQb-HZ5fSfNF" alt="The Crew Logo" class="w-full h-full object-contain">
+          <!-- Singular mint accent indicator dot -->
+          <div class="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-[#0A0A0B] flex items-center justify-center">
+            <div class="w-2.5 h-2.5 rounded-full bg-[#CFFFE2]"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- App Name & Tagline -->
+      <h1 class="text-3xl font-extrabold tracking-tight text-[#F6F6F6] mb-2 flex items-center justify-center gap-1.5">
+        <span>The Crew</span>
+        <span class="inline-block w-1.5 h-1.5 rounded-full bg-[#CFFFE2]"></span>
+      </h1>
+      <p class="text-sm font-medium text-[#A1A1AA] leading-relaxed max-w-[240px]">
+        Where gaming, soundscapes, and aesthetic spaces connect.
+      </p>
+
+      <!-- Loading / Progress bar indicator -->
+      <div class="w-full mt-8 pt-6 border-t border-[#27272A]/70 flex flex-col items-center gap-2.5">
+        <div class="w-full h-1.5 bg-[#18181B] rounded-full overflow-hidden border border-[#27272A]/40 relative">
+          <div class="h-full bg-[#CFFFE2] rounded-full w-2/3"></div>
+        </div>
+        <div class="w-full flex justify-between text-[11px] text-[#71717A] font-mono">
+          <span>SYNCING NODES</span>
+          <span class="text-[#A2D5C6] font-semibold">68%</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Information -->
+  <footer class="w-full pb-4 flex flex-col items-center gap-2 z-10">
+    <div class="flex items-center gap-3 text-xs text-[#71717A]">
+      <span class="inline-flex items-center gap-1">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#A2D5C6]"></span>
+        Encrypted Audio
+      </span>
+      <span>•</span>
+      <span>Ultra Low-Latency</span>
+      <span>•</span>
+      <span>Zero Ads</span>
+    </div>
+    <p class="text-[11px] text-[#52525B]">
+      © 2025 The Crew Network Protocol. All systems operational.
+    </p>
+  </footer>
+
+</body>
+</html>

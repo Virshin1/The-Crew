@@ -1,0 +1,479 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><title>The Crew</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#121214;color:#e5e1e4;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface": "#131315",
+          "on-primary-fixed-variant": "#474647",
+          "on-primary-fixed": "#1c1b1c",
+          "on-background": "#e5e1e4",
+          "tertiary-container": "#0a0a0d",
+          "outline": "#919094",
+          "surface-container": "#18181b",
+          "on-error": "#690005",
+          "surface-variant": "#353437",
+          "on-tertiary-fixed": "#1b1b1e",
+          "border-subtle": "#27272a",
+          "on-primary-container": "#7a797a",
+          "on-surface": "#e5e1e4",
+          "accent-pink": "#ec4899",
+          "tertiary-fixed": "#e4e1e5",
+          "outline-variant": "#46464a",
+          "inverse-surface": "#e5e1e4",
+          "error": "#ffb4ab",
+          "on-surface-variant": "#c7c6ca",
+          "surface-dim": "#131315",
+          "secondary": "#c8c5ca",
+          "secondary-fixed": "#e4e1e6",
+          "inverse-primary": "#5f5e5f",
+          "secondary-container": "#47464a",
+          "surface-container-lowest": "#0e0e10",
+          "on-secondary-fixed-variant": "#47464a",
+          "on-primary": "#313031",
+          "text-secondary": "#a1a1aa",
+          "surface-container-high": "#2a2a2c",
+          "on-secondary-container": "#b6b4b8",
+          "on-secondary": "#303033",
+          "inverse-on-surface": "#303032",
+          "secondary-fixed-dim": "#c8c5ca",
+          "accent-purple": "#8b5cf6",
+          "surface-raised": "#222226",
+          "surface-canvas": "#121214",
+          "tertiary-fixed-dim": "#c8c6c9",
+          "primary-fixed": "#e5e2e3",
+          "primary-container": "#0a0a0b",
+          "error-container": "#93000a",
+          "surface-base": "#0a0a0b",
+          "on-tertiary": "#303033",
+          "primary-fixed-dim": "#c8c6c7",
+          "tertiary": "#c8c6c9",
+          "surface-bright": "#39393b",
+          "text-primary": "#f4f4f5",
+          "background": "#131315",
+          "on-secondary-fixed": "#1b1b1e",
+          "on-tertiary-fixed-variant": "#47464a",
+          "surface-container-low": "#1b1b1d",
+          "border-muted": "#1f1f23",
+          "on-tertiary-container": "#7a797c",
+          "surface-tint": "#c8c6c7",
+          "text-muted": "#71717a",
+          "surface-container-highest": "#353437",
+          "primary": "#c8c6c7",
+          "on-error-container": "#ffdad6"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-2xl": "3rem",
+          "space-xs": "0.25rem",
+          "space-xl": "2rem",
+          "space-2xs": "0.125rem",
+          "channel-panel-w": "15rem",
+          "space-lg": "1.5rem",
+          "space-md": "0.75rem",
+          "space-base": "1rem",
+          "space-sm": "0.5rem",
+          "sidebar-rail-w": "4.5rem",
+          "member-panel-w": "16rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-xl-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-sm": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }
+</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-background font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl border-b border-border-muted"><div class="h-16 px-space-base flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="The Crew App Icon" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VSVZUyOLiNgLfqh243EGJ-hcYDxGbnYrrtoqTMFibT-bK62CjUpdqO6Wyc0ckW1z4hkX0Qzo-9ju17l-PxUKi4sfO08YQ677_99kyMuM3Di8vwG0NnhCML5i3x2LRIwCU1KYeez9kmvYEFnRlWPPEcDvnu88EwC9yS3tlsopH-roext_k-IAbwEGlz6J89Vf9JoRVM_YH8ab9pFGXTi98JKJV2-vxxtjNhzNClWF4YeiHeRQb-HZ5fSfNF"><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider truncate">The Crew</span><span class="font-headline-sm text-headline-sm text-text-primary truncate">Servers Hub</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Search" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-fixed"></span></button><div class="pl-space-2xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-border-subtle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8kxUB7B3u6W5BhVy6O-ELOe-dQpnakAars0CK5CgL_G4zRNsualedenshY8lJwAyOnmV-BWu9C_t9W8DfQaCq5eIDZ7Yvq3yIYdsFjO4Y2VsX1YiLI698Y3cnjzWSmkul8T-ExEii4mm3RjVktpQVbz-kttJFOUG6dpqvQtSKckw4uK0Oxco_HkKQ6B0QOkR7nhUntj1QDUcVY-u95O3s9xQ9Z-1t_3VmGzECc5nOCuYr-3w8gLqhAA"></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<div class="w-full flex">
+<!-- Server Rail (Mini Leftmost Column) -->
+<aside class="w-14 shrink-0 flex flex-col items-center py-space-sm gap-space-sm bg-surface-container-lowest border-r border-border-muted">
+<!-- Direct Messages Hub Icon -->
+<button class="relative group w-11 h-11 rounded-2xl bg-surface-container-low border border-border-subtle flex items-center justify-center text-text-secondary transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[20px]">mark_chat_unread</span>
+<span class="absolute top-1 right-1 w-2 h-2 bg-text-muted rounded-full"></span>
+</button>
+<div class="w-6 h-[1px] bg-border-subtle my-space-2xs"></div>
+<!-- Active Server: Neon Arcade -->
+<div class="relative flex items-center justify-center">
+<div class="absolute -left-1 w-1 h-8 bg-text-primary rounded-r-full"></div>
+<button class="w-11 h-11 rounded-2xl overflow-hidden ring-1 ring-border-subtle transition-all active:scale-95">
+<img class="w-full h-full object-cover" data-alt="Vibrant neon synthwave arcade cabinet emblem with glowing magenta and purple retrowave grid lines inside a sleek dark squircle logo icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1SZcyiao7n_7HaUoYpEWWvQdfeycDsHn_LQv-pfWfYzsZkVZ3r3VkI0FL7PvI9J1WVQzM9XS3ARz2mAGgbxHBV-1XVZc9oLDhn_JbX2NPY0M1yNafeZfG9MA4hJtVOPf2SSHDHTGkl2QlPWRW1VkrK84hdhAGSZydABu2-WAZZvDGlVseOsh_zIZ0SgWjGWgBghg9LxBLFcKxdKKuDSeFp24Q1fe13gFpn1CBQQgGL4vOVApBnavDIw">
+</button>
+</div>
+<!-- Server 2: Cyber Garden -->
+<button class="w-11 h-11 rounded-2xl overflow-hidden opacity-70 hover:opacity-100 border border-border-muted transition-all active:scale-95">
+<img class="w-full h-full object-cover" data-alt="Stylized cyberpunk botanical garden icon with bioluminescent violet flowers and futuristic glowing emerald foliage in dark ambiance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoUVlAj4PTtzTTLDMwLOeI9rAqY23QWCCrtOQrZdd9Enoi8Oz6Xa27zdVKRRY5r8U3qWk1-ohOmw-BVZdwIw1bHE5m4bHbjjelNYMyPRgUxFgKKDVaRmtgHFSrEyr8T-qpq89J1RnLvEF1ZYrvW5Nbg-l9FdTTayOkgtPqk2wN7OpVnE7f7qQqJeeJ16vALhH0Nj7XsLUTwCrG9pfDfFkMfjey6Rj7LeCE7Oa0J7g0QRMwW3wOfsktrg">
+</button>
+<!-- Server 3: Lo-Fi Study -->
+<button class="w-11 h-11 rounded-2xl overflow-hidden opacity-70 hover:opacity-100 border border-border-muted transition-all active:scale-95">
+<img class="w-full h-full object-cover" data-alt="Pastel neon anime style coffee cup with warm vapor trails and starry twilight cosmic sky in cozy moody aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlWOjtibkZdgJxEYvznerYnOSfxHJ4h7G4wFdwJKLtLHjPYiJbrF5X4Yk63kzXSgkPzrXmNhwbPgQHuhAmVtnGCfyHXoJqI8A4_WEaBvsL-7n6BHPkpujf04yfiGzEGYop2kO1faCY0PbxcpMmgQAfgixirbO1cVuiaTR-4DTvl1WqSuCvVh0JWUJw8sr9AkekvaeZA5as8Fwy9yIt0Ashioodl40c-dcGDZiwcLRhn-oOBFuv_mXJSQ">
+</button>
+<!-- Server 4: Pixel Forge -->
+<button class="w-11 h-11 rounded-2xl overflow-hidden opacity-70 hover:opacity-100 border border-border-muted transition-all active:scale-95">
+<img class="w-full h-full object-cover" data-alt="Retro 16-bit glowing anvil icon radiating hot fuchsia and electric purple neon sparks in dark dungeon club aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD01nD7BNXI16sVEga-xpcKwi9sB9hx3N11JO2CJeea-ZgjESO_3rI7k5NdCycX8QqXVoLLpLgmcjM68he1N_SV0LYmkvnTT3_Rpdzzgzm9HplwYbca5Gi_Va5TfB92mWqLFyWo6e_4AsKx2hgOIPai2AGzWCIL6zEsAPJs2oYzRqOsg7hQhJKcQY6mB7S_lvNU-RFTmef0wVr1hDRHl41V69ItfMVMgc6_82Pt8KkgsMbyy1EDHR_lw">
+</button>
+<!-- Add Server Button -->
+<button class="w-11 h-11 rounded-2xl bg-surface-container-high hover:bg-surface-bright border border-border-subtle flex items-center justify-center text-on-surface-variant hover:text-text-primary transition-all active:scale-95">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</aside>
+<!-- Main Column: Channel Drawer Accordion & Active Chat Feed -->
+<div class="flex-1 min-w-0 flex flex-col bg-surface">
+<!-- Server Header & Channel Switcher Bar -->
+<section class="bg-surface-container-low px-space-base py-space-sm flex flex-col gap-space-xs border-b border-border-muted">
+<div class="flex items-center justify-between">
+<button class="flex items-center gap-space-xs min-w-0 group text-left" id="channel-toggle-btn">
+<span class="font-headline-sm text-headline-sm text-text-primary truncate transition-colors">Neon Arcade</span>
+<span class="material-symbols-outlined text-[20px] text-text-muted transition-transform duration-200" id="channel-chevron">expand_more</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest border border-border-subtle text-text-secondary font-label-sm text-label-sm">LVL 3</span>
+</button>
+<div class="flex items-center gap-space-2xs">
+<button aria-label="Pins" class="w-8 h-8 rounded-full bg-surface-container border border-border-subtle flex items-center justify-center text-text-secondary hover:text-on-surface active:scale-95">
+<span class="material-symbols-outlined text-[18px]">push_pin</span>
+</button>
+<button aria-label="Member List" class="w-8 h-8 rounded-full bg-surface-container border border-border-subtle flex items-center justify-center text-text-secondary hover:text-on-surface active:scale-95">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</button>
+</div>
+</div>
+<!-- Quick Channel Horizontal Carousel / Collapsible Panel -->
+<div class="pt-space-xs flex flex-col gap-space-sm" id="channels-panel">
+<!-- Text Channels Section -->
+<div>
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider block mb-1">Text Channels</span>
+<div class="flex gap-space-xs overflow-x-auto pb-1 -mx-space-base px-space-base no-scrollbar">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container border border-border-subtle text-text-secondary font-label-md text-label-md shrink-0 active:scale-95 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-text-muted">tag</span>
+<span class="">welcome</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container-high border border-border-subtle text-text-primary font-label-md text-label-md shrink-0 active:scale-95 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-text-primary">tag</span>
+<span class="">lounge</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed ml-1"></span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container border border-border-subtle text-text-secondary font-label-md text-label-md shrink-0 active:scale-95 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-text-muted">tag</span>
+<span class="">gaming-clips</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container border border-border-subtle text-text-secondary font-label-md text-label-md shrink-0 active:scale-95 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-text-muted">tag</span>
+<span class="">bot-beats</span>
+</button>
+</div>
+</div>
+<!-- Active Voice Stage Preview Card -->
+<div class="bg-surface-container rounded-xl p-space-sm flex items-center justify-between border border-border-subtle">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high border border-border-subtle flex items-center justify-center text-text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-primary truncate">Chill Beats [Voice]</span>
+<span class="font-body-sm text-[11px] text-text-secondary truncate">Playing: Synthwave Radio 24/7</span>
+</div>
+</div>
+<!-- Connected Avatars Stack -->
+<div class="flex items-center -space-x-2 shrink-0">
+<div class="relative w-7 h-7 rounded-full overflow-hidden ring-1 ring-surface-container">
+<img class="w-full h-full object-cover" data-alt="Female gamer avatar wearing glowing cat ear headphones with soft pink and neon ambient backlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWRe3GRE40OsOjCDFqNsWvf2Mz_w11n_rQY-1MgYT90qAedheiizjzFVG9DZ12kFOn8t-oDAoDj7Oz1prl-WSHHCNqLQXaH1yhj-Yuv8A7CeQHJYzFXrO4BlASzS6GEvWx6MKePa2F1g-moga5MaQqOmp1wgNxE-VkRzkUaJA58g6nhEttm9gX22liv-1fwlzbKxQaaKose9LOWL2qqoOI5RfVylY9p-wWK-4_ZUewwrl_js00ff126w">
+</div>
+<div class="relative w-7 h-7 rounded-full overflow-hidden ring-1 ring-surface-container">
+<img class="w-full h-full object-cover" data-alt="Male streetwear digital avatar with purple tinted sunglasses and futuristic hoodie in nightclub lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXCzdqWnpyCOOMNNLU-W6PEypnbnrfp4rm5PVXzgPLvUoNmmuy1eG104RBXnAOY09NgKGOtPnTauSe7E1gjvWnCrpI4c6OlK-_wFUKmrQBiLcbDboja6xx9T7nd5sQzD53dWEHu0ratBsqF63Dtprj9ljcItysM_m0gTDAfqaDAKhQhKW79jKQtWxVVt5aCMSvQjNZCOg3kABBDD3Z2FYN9O7JKv8_NnBTs7ydZIt_0G2syfsAIBrlTA">
+</div>
+<div class="w-7 h-7 rounded-full bg-surface-container-highest border border-border-subtle flex items-center justify-center font-label-sm text-[10px] text-text-secondary">
+                +4
+              </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Active Channel Feed: #lounge -->
+<div class="flex-1 flex flex-col px-space-base py-space-md gap-space-md">
+<!-- Date Separator Pill -->
+<div class="flex items-center justify-center my-space-xs">
+<div class="px-3 py-1 rounded-full bg-surface-container border border-border-subtle text-text-muted font-label-sm text-label-sm uppercase tracking-wider">
+            Today • 9:42 PM
+          </div>
+</div>
+<!-- Message 1: Kaelen -->
+<div class="flex items-start gap-space-sm group">
+<div class="relative shrink-0">
+<div class="w-10 h-10 rounded-2xl overflow-hidden border border-border-subtle">
+<img class="w-full h-full object-cover" data-alt="Digital art avatar of a cool retro gamer with glowing pink visor glasses in atmospheric vaporwave room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJh0YsGef-TwE5G6d-321QM8b99nTyafcpEgzqWikBsmbIBa4qJaIOg-W0WG32s3GaIJLt1jNq7Kw4mKNI4-w7lLNsBnygty6BOf-YZyuq88BEw2sQyRFP3kE4iMTCVhIKDNXMvG1s-nqiyH3AVVR5oO6Bu6Ek_d4cyg9v97Y4344nIUnlyWeox06Od4X4QPBH2znweeK-iOolxjX9gHxJc7U82QNRRvh2zY7X5OrMGroByI3_P35GyQ">
+</div>
+<div class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-surface-variant border border-surface-container-lowest"></div>
+</div>
+<div class="flex-1 min-w-0 flex flex-col">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-text-primary truncate">Kaelen</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high border border-border-subtle text-text-secondary font-label-sm text-[10px]">ADMIN</span>
+<span class="font-body-sm text-[11px] text-text-muted">9:41 PM</span>
+</div>
+<div class="mt-1 bg-surface-container p-space-sm rounded-2xl rounded-tl-sm text-on-surface border border-border-subtle">
+<p class="font-body-md text-body-md">Midnight raid lobby is live! Grab the stream key or join the voice deck before we hit the ranked queue.</p>
+</div>
+<!-- Message Reactions -->
+<div class="flex flex-wrap items-center gap-1.5 mt-1.5">
+<button class="reaction-pill flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container border border-border-subtle hover:bg-surface-container-high active:scale-90 transition-all">
+<span class="">🔥</span>
+<span class="font-label-sm text-label-sm text-text-secondary">12</span>
+</button>
+<button class="reaction-pill flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container border border-border-subtle hover:bg-surface-container-high active:scale-90 transition-all">
+<span class="">💜</span>
+<span class="font-label-sm text-label-sm text-text-secondary">8</span>
+</button>
+<button class="reaction-pill flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container border border-border-subtle hover:bg-surface-container-high active:scale-90 transition-all">
+<span class="">🚀</span>
+<span class="font-label-sm text-label-sm text-text-secondary">5</span>
+</button>
+<button aria-label="Add reaction" class="w-6 h-6 rounded-full bg-surface-container border border-border-subtle hover:bg-surface-container-high flex items-center justify-center text-text-muted hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[14px]">add_reaction</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Message 2: Nyx with Rich Clip Preview -->
+<div class="flex items-start gap-space-sm group">
+<div class="relative shrink-0">
+<div class="w-10 h-10 rounded-2xl overflow-hidden border border-border-subtle">
+<img class="w-full h-full object-cover" data-alt="Anime cyber girl portrait with lavender braided hair and glowing neon choker collar against dark cityscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBonEKJxtyBi9lUuq0HQ3YgnlHW99Fh9yo31TBcqk4qCg5i7MsZfS_CDGT3SSz7SR-3IoLRehsGzLDYO_mF3e6Y9MYrV_lKn22h2dyCHw6cPE4NV6sOg84TmVug8VnVV4_t7t_XLmTBuS778q_sA_BqcyJscjhBcJjBtK--SixL7nNKnyAevbvdccCMLkU1gfyY0Ni2cITIhfT6t0eolp9LvLgJz1ciwxHeTZTiCCeCv9HZ3jJb_S3KfQ">
+</div>
+<div class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-surface-bright border border-surface-container-lowest"></div>
+</div>
+<div class="flex-1 min-w-0 flex flex-col">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-text-primary truncate">Nyx</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high border border-border-subtle text-text-secondary font-label-sm text-[10px]">VIP</span>
+<span class="font-body-sm text-[11px] text-text-muted">9:43 PM</span>
+</div>
+<div class="mt-1 bg-surface-container p-space-sm rounded-2xl rounded-tl-sm text-on-surface border border-border-subtle flex flex-col gap-space-xs">
+<p class="font-body-md text-body-md">Just hit this ridiculous clutch on Sector 9! Peep the replay timestamp at 0:42 🎮✨</p>
+<!-- Clip Media Preview Card -->
+<div class="relative w-full aspect-video rounded-xl overflow-hidden border border-border-subtle mt-1 group cursor-pointer"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Tactical gameplay preview" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtzvVPYsZ60BRf1GcuErZXKTirT95OUElkPwX0GkfOa9g_gEa0QpBWp3p7G9J88TbtUEjwPFvxEwFxP3OF4kEw1U0i4ropLYTH7TbbuPaqhD1Vguj0Chdd2pDqbutxfmevEPuGmNaRL9lguKcLzM6qJnh42C7jgmpjcjNOxrdNz1tATnEAGPg2fhNuFwnVtURwUBWoBof-gjU-zxtVqNj0TQb2U26QU42_YacDhdq2WHC0ZM35D7WsZQ"><div class="absolute inset-0 bg-surface-container-lowest/40"></div><div class="absolute inset-0 flex items-center justify-center"><div class="w-12 h-12 rounded-full bg-surface-container/95 backdrop-blur-md border border-border-subtle text-text-primary flex items-center justify-center group-hover:scale-110 transition-transform"><span class="material-symbols-outlined text-[24px]">play_arrow</span></div></div><div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-on-surface font-label-sm text-label-sm"><span class="bg-surface-container-low border border-border-subtle px-2 py-0.5 rounded-full text-text-secondary">Sector9_Clutch.mp4</span><span class="bg-surface-container-low border border-border-subtle px-2 py-0.5 rounded-full text-text-secondary">01:14</span></div></div>
+</div>
+<!-- Message Reactions -->
+<div class="flex flex-wrap items-center gap-1.5 mt-1.5">
+<button class="reaction-pill flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container border border-border-subtle hover:bg-surface-container-high active:scale-90 transition-all">
+<span class="">🤯</span>
+<span class="font-label-sm text-label-sm text-text-secondary">19</span>
+</button>
+<button class="reaction-pill flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container border border-border-subtle hover:bg-surface-container-high active:scale-90 transition-all">
+<span class="">👑</span>
+<span class="font-label-sm text-label-sm text-text-secondary">7</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Message 3: Zero (Mentioning user) -->
+<div class="flex items-start gap-space-sm group">
+<div class="relative shrink-0">
+<div class="w-10 h-10 rounded-2xl overflow-hidden border border-border-subtle">
+<img class="w-full h-full object-cover" data-alt="Hacker character avatar in dark cyberpunk hoodie illuminated by luminous holographic violet code glyphs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDD1Dqrp9tvurbHv8yQqX6RScNS3Nv8f3egnk58zZpzV7GjnjqtxnjFyvSeVgYgo1JowXylAAJme_gLazeo6GdVwl8E17jtkemNNgl_G-Fm4h_nG25v_gLIVtF0l2KD35svgI8abMclCkuMksYHs7Iu5uz6AokXqwFuvlGw8ZgKIbdoHf2a_f69-w2ryvQfEPSB1-ZT0inltdNPgwRS85mVUzdpmJhCsldczVOpXDtKD7xc8BmRC6olQ">
+</div>
+<div class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-surface-variant border border-surface-container-lowest"></div>
+</div>
+<div class="flex-1 min-w-0 flex flex-col">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-text-primary truncate">Zero_X</span>
+<span class="font-body-sm text-[11px] text-text-muted">Just now</span>
+</div>
+<div class="mt-1 bg-surface-container p-space-sm rounded-2xl rounded-tl-sm text-on-surface border border-border-subtle">
+<p class="font-body-md text-body-md">
+                Yo <span class="px-1.5 py-0.5 rounded-md bg-surface-container-high border border-border-subtle text-secondary font-label-md text-label-md">@Kaelen</span> check voice lobby, squad is ready to deploy!
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Sticky Chat Input Bar -->
+<div class="sticky bottom-2 px-space-base mt-auto">
+<div class="bg-surface-container/95 backdrop-blur-xl rounded-full p-1.5 pl-3 flex items-center gap-space-xs border border-border-subtle shadow-lg">
+<!-- Attachment Action -->
+<button aria-label="Add attachment" class="w-8 h-8 rounded-full bg-surface-container-high border border-border-subtle flex items-center justify-center text-text-secondary hover:text-text-primary active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<!-- Input Field Simulation -->
+<input class="flex-1 min-w-0 bg-transparent text-text-primary placeholder:text-text-muted font-body-md text-body-md outline-none px-1" placeholder="Message #lounge..." type="text">
+<!-- Right Icon Actions: Gift, Emoji, Send -->
+<div class="flex items-center gap-1 pr-1">
+<button aria-label="Nitro Gift" class="w-8 h-8 rounded-full flex items-center justify-center text-text-muted hover:text-text-primary active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[20px]">featured_seasonal_and_gifts</span>
+</button>
+<button aria-label="Emoji picker" class="w-8 h-8 rounded-full flex items-center justify-center text-text-muted hover:text-text-primary active:scale-90 transition-all">
+<span class="material-symbols-outlined text-[20px]">sentiment_satisfied</span>
+</button>
+<button aria-label="Send message" class="w-9 h-9 rounded-full bg-primary-fixed text-surface-container-lowest flex items-center justify-center hover:opacity-100 active:scale-95 transition-all"><span class="material-symbols-outlined text-[18px]">arrow_upward</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const toggleBtn = document.getElementById('channel-toggle-btn');
+    const panel = document.getElementById('channels-panel');
+    const chevron = document.getElementById('channel-chevron');
+
+    if (toggleBtn && panel && chevron) {
+      toggleBtn.addEventListener('click', () => {
+        panel.classList.toggle('hidden');
+        chevron.classList.toggle('rotate-180');
+      });
+    }
+
+    // Interactive delight: Reaction count bumper
+    const reactionPills = document.querySelectorAll('.reaction-pill');
+    reactionPills.forEach(pill => {
+      pill.addEventListener('click', function() {
+        const countSpan = this.querySelector('span:last-child');
+        if (countSpan) {
+          let currentCount = parseInt(countSpan.textContent, 10);
+          if (!this.dataset.reacted) {
+            this.dataset.reacted = "true";
+            countSpan.textContent = currentCount + 1;
+            this.classList.add('scale-110');
+            setTimeout(() => this.classList.remove('scale-110'), 150);
+          } else {
+            delete this.dataset.reacted;
+            countSpan.textContent = Math.max(0, currentCount - 1);
+          }
+        }
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe pointer-events-none" data-active-classes="text-text-primary border border-border-subtle bg-surface-container-high"><div class="px-space-base pb-space-sm pointer-events-auto"><div class="h-16 px-space-sm bg-surface-container/95 backdrop-blur-xl rounded-full border border-border-subtle shadow-lg flex items-center justify-between gap-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center w-12 h-12 rounded-full transition-all duration-200 text-text-primary border border-border-subtle bg-surface-container-high" data-path="servers-hub" href="#"><span class="material-symbols-outlined text-[22px]">dns</span><span class="font-label-sm text-[10px] leading-tight mt-0.5">Servers</span></a><a class="flex flex-col items-center justify-center w-12 h-12 rounded-full text-text-muted hover:text-text-primary transition-all duration-200" data-path="direct-messages" href="#"><span class="material-symbols-outlined text-[22px]">forum</span><span class="font-label-sm text-[10px] leading-tight mt-0.5">Messages</span></a><a class="flex flex-col items-center justify-center w-12 h-12 rounded-full text-text-muted hover:text-text-primary transition-all duration-200" data-path="discovery" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-[10px] leading-tight mt-0.5">Explore</span></a><a class="relative flex flex-col items-center justify-center w-12 h-12 rounded-full text-text-muted hover:text-text-primary transition-all duration-200" data-path="activity-alerts" href="#"><span class="material-symbols-outlined text-[22px]">local_fire_department</span><span class="absolute top-2 right-2.5 w-1.5 h-1.5 rounded-full bg-primary-fixed"></span><span class="font-label-sm text-[10px] leading-tight mt-0.5">Activity</span></a><a class="flex flex-col items-center justify-center w-12 h-12 rounded-full text-text-muted hover:text-text-primary transition-all duration-200" data-path="user-profile" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-sm text-[10px] leading-tight mt-0.5">Profile</span></a></div></div></nav>
+
+</body></html>
