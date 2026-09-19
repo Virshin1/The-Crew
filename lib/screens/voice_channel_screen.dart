@@ -203,7 +203,7 @@ class _VoiceChannelScreenState extends State<VoiceChannelScreen> {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
               decoration: BoxDecoration(
-                color: Colors.red.withValues(alpha: 0.8),
+                color: Colors.blue.withValues(alpha: 0.8),
                 borderRadius: BorderRadius.circular(4),
               ),
               child: const Text('LIVE', style: TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold)),
