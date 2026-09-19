@@ -1037,6 +1037,10 @@ function generateHtml() {
           <td class="meta-value">Mobile Smartphone (390 × 844 pt @ 2x DPR / 780 × 1688 px)</td>
         </tr>
         <tr>
+          <td class="meta-key">Design Paradigm:</td>
+          <td class="meta-value">Mobile-First Ergonomics, 3-Tier Layered MVC, Event-Driven WebSockets</td>
+        </tr>
+        <tr>
           <td class="meta-key">Document Version:</td>
           <td class="meta-value">1.0.0 (Final Submission)</td>
         </tr>
@@ -1066,12 +1070,12 @@ function generateHtml() {
     </div>
 
     <div class="text-box">
-      <div class="tb-title">1.1 Project Abstract</div>
+      <div class="tb-title">1.1 Project Abstract & Design Scope</div>
       <p class="tb-p">
         Digital gaming squads, competitive esports teams, and modern creative communities rely heavily on real-time communication systems that provide immediate responsiveness, low-latency audio signaling, and organized text spaces. Legacy communication clients often suffer from platform bloat, intrusive tracking, slow startup times, and complex navigation structures that diminish mobile usability.
       </p>
       <p class="tb-p">
-        <strong>The Crew</strong> is engineered from first principles as an integrated cross-platform mobile client and real-time backend service. Built using Flutter and Dart on the client side, backed by an Express and Socket.IO microservice architecture with an embedded high-performance SQLite engine, the system delivers sub-second message delivery, immediate emoji reactions, live presence heartbeats, and private direct messaging in a clean, ergonomic mobile viewport.
+        <strong>The Crew</strong> is engineered from first principles as an integrated cross-platform mobile client and real-time backend service. Built using Flutter and Dart on the client side, backed by an Express and Socket.IO microservice architecture with an embedded high-performance SQLite engine, the system delivers sub-second message delivery, immediate emoji reactions, live presence heartbeats, and private direct messaging in a clean, ergonomic mobile viewport. The design emphasizes single-handed thumb accessibility, high-contrast visual hierarchy, and strict separation between reactive UI presentation and real-time event orchestration.
       </p>
     </div>
 
@@ -1079,6 +1083,7 @@ function generateHtml() {
       <div class="text-box">
         <div class="tb-title">1.2 Key Project Objectives</div>
         <p class="tb-p">• <strong>Mobile Ergonomics:</strong> Deliver a native-grade 390×844 pt smartphone experience with responsive layouts.</p>
+        <p class="tb-p">• <strong>Design Architecture:</strong> Enforce 3-tier decoupling across presentation, domain state, and transport.</p>
         <p class="tb-p">• <strong>Event-Driven State:</strong> Establish bidirectional WebSocket channels for immediate message delivery and presence.</p>
         <p class="tb-p">• <strong>Zero-Configuration Startup:</strong> Embed an autonomous SQLite WAL database engine with automatic schema migrations.</p>
         <p class="tb-p">• <strong>Granular Security:</strong> Enforce bcrypt password hashing (10 salt rounds) and signed JSON Web Tokens (JWT).</p>
@@ -1355,6 +1360,32 @@ function generateHtml() {
           </tr>
         </tbody>
       </table>
+    </div>
+
+    <div class="text-box" style="margin-top: 6px; padding: 6px 10px;">
+      <div class="tb-title" style="margin-bottom: 4px;">3.0.4 Architectural & UI/UX Design Description</div>
+      <div class="grid-2">
+        <div>
+          <p class="tb-p" style="margin-bottom: 4px; font-size: 8.5pt; line-height: 1.35;">
+            <strong>UI/UX Ergonomics & Interaction Philosophy:</strong><br/>
+            Engineered specifically for one-handed smartphone ergonomics (standard 390×844 pt base viewport). Layout zones prioritize thumb reachability: persistent left vertical server rail, horizontal channel switchers, and bottom shell navigation tabs. Chat views feature asymmetric bubbles with micro-interactions (press-to-react emojis, typing indicators, read receipts).
+          </p>
+          <p class="tb-p" style="font-size: 8.5pt; line-height: 1.35;">
+            <strong>Visual Hierarchy & Accessibility:</strong><br/>
+            An OLED-optimized high-contrast palette minimizes battery draw and eye fatigue. Distinct accent colors provide clear WCAG-compliant status cues for presence, active voice stages, and notification badges.
+          </p>
+        </div>
+        <div>
+          <p class="tb-p" style="margin-bottom: 4px; font-size: 8.5pt; line-height: 1.35;">
+            <strong>Decoupled 3-Tier Layering:</strong><br/>
+            Strictly separates reactive Presentation (Flutter widgets), Domain State (Provider change notifiers), and Persistence/Transport (Express REST + Socket.IO) for modular testing and zero-configuration SQLite deployment.
+          </p>
+          <p class="tb-p" style="font-size: 8.5pt; line-height: 1.35;">
+            <strong>State Preservation & Protocol Strategy:</strong><br/>
+            Leverages <code>StatefulShellRoute.indexedStack</code> to maintain scroll offset and in-memory widget state across tab transitions. Real-time events utilize room-segmented WebSockets to ensure &lt;18ms delivery without broadcast overhead.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="footer-rule">
