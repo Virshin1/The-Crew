@@ -390,7 +390,7 @@ function generateHtml() {
     <div class="page screen-page">
       <div class="header-rule">
         <span class="hr-title">THE CREW • PROJECT SPECIFICATION REPORT</span>
-        <span class="hr-meta">CONTRIBUTORS: PRANAV KALE & R VIRSHIN</span>
+        <span class="hr-meta">TECHNICAL SPECIFICATION & DESIGN MANUAL</span>
       </div>
 
       <div class="screen-title-block">
@@ -1010,7 +1010,7 @@ function generateHtml() {
 
       <!-- CONTRIBUTORS CARD -->
       <div class="cover-contributors-card">
-        <div class="cc-title">PROJECT CONTRIBUTORS</div>
+        <div class="cc-title">PROJECT CREATORS</div>
         <div class="cc-grid">
           <div class="cc-box">
             <div class="cc-name">Pranav Kale</div>
@@ -1057,7 +1057,7 @@ function generateHtml() {
   <div class="page doc-page">
     <div class="header-rule">
       <span class="hr-title">THE CREW • PROJECT SPECIFICATION REPORT</span>
-      <span class="hr-meta">CONTRIBUTORS: PRANAV KALE & R VIRSHIN</span>
+      <span class="hr-meta">TECHNICAL SPECIFICATION MANUAL</span>
     </div>
 
     <div class="page-title-block">
@@ -1087,14 +1087,11 @@ function generateHtml() {
       <div class="text-box">
         <div class="tb-title">1.3 Declaration of Originality</div>
         <p class="tb-p">
-          We hereby declare that this project titled <strong>"The Crew: Real-Time Gaming Community & Spatial Communication Platform"</strong> is an original work designed, implemented, and submitted by:
+          We hereby declare that this project titled <strong>"The Crew: Real-Time Gaming Community & Spatial Communication Platform"</strong> is an original capstone engineering implementation developed exclusively for this submission.
         </p>
-        <div style="background: #FFFFFF; border: 1px solid #D1D5DB; padding: 8px 10px; margin: 6px 0;">
-          <p style="font-weight: 700; color: #000000; font-size: 9pt;">• Pranav Kale</p>
-          <p style="font-size: 8pt; color: #4B5563; margin-bottom: 4px;">Backend Architecture, Database Design & Socket Protocols</p>
-          <p style="font-weight: 700; color: #000000; font-size: 9pt;">• R Virshin</p>
-          <p style="font-size: 8pt; color: #4B5563;">Mobile Application Engineering, UI/UX & State Architecture</p>
-        </div>
+        <p class="tb-p" style="margin-top: 6px;">
+          All client architecture, application state handling, database schemas, and real-time WebSocket protocol pipelines documented herein were designed and implemented from first principles.
+        </p>
       </div>
     </div>
 
@@ -1143,7 +1140,7 @@ function generateHtml() {
   <div class="page doc-page">
     <div class="header-rule">
       <span class="hr-title">THE CREW • PROJECT SPECIFICATION REPORT</span>
-      <span class="hr-meta">CONTRIBUTORS: PRANAV KALE & R VIRSHIN</span>
+      <span class="hr-meta">TECHNICAL SPECIFICATION MANUAL</span>
     </div>
 
     <div class="page-title-block">
@@ -1222,7 +1219,7 @@ function generateHtml() {
   <div class="page doc-page">
     <div class="header-rule">
       <span class="hr-title">THE CREW • PROJECT SPECIFICATION REPORT</span>
-      <span class="hr-meta">CONTRIBUTORS: PRANAV KALE & R VIRSHIN</span>
+      <span class="hr-meta">TECHNICAL SPECIFICATION MANUAL</span>
     </div>
 
     <div class="page-title-block">
@@ -1282,7 +1279,7 @@ function generateHtml() {
   <div class="page doc-page">
     <div class="header-rule">
       <span class="hr-title">THE CREW • PROJECT SPECIFICATION REPORT</span>
-      <span class="hr-meta">CONTRIBUTORS: PRANAV KALE & R VIRSHIN</span>
+      <span class="hr-meta">TECHNICAL SPECIFICATION MANUAL</span>
     </div>
 
     <div class="page-title-block">
@@ -1373,7 +1370,7 @@ function generateHtml() {
   <div class="page doc-page">
     <div class="header-rule">
       <span class="hr-title">THE CREW • PROJECT SPECIFICATION REPORT</span>
-      <span class="hr-meta">CONTRIBUTORS: PRANAV KALE & R VIRSHIN</span>
+      <span class="hr-meta">TECHNICAL SPECIFICATION MANUAL</span>
     </div>
 
     <div class="page-title-block">
@@ -1531,7 +1528,7 @@ function generateHtml() {
   <div class="page doc-page">
     <div class="header-rule">
       <span class="hr-title">THE CREW • PROJECT SPECIFICATION REPORT</span>
-      <span class="hr-meta">CONTRIBUTORS: PRANAV KALE & R VIRSHIN</span>
+      <span class="hr-meta">TECHNICAL SPECIFICATION MANUAL</span>
     </div>
 
     <div class="page-title-block">
@@ -1635,8 +1632,8 @@ function generateHtml() {
           This technical documentation confirms the complete development, architectural compliance, and functional verification of <strong>The Crew</strong>. Submitted for academic capstone project evaluation.
         </div>
         <div style="text-align: right;">
-          <div style="font-weight: 800; font-size: 9.5pt; color: #000000;">PRANAV KALE & R VIRSHIN</div>
-          <div style="font-size: 8pt; color: #6B7280; text-transform: uppercase;">PROJECT DEVELOPERS & AUTHORS</div>
+          <div style="font-weight: 800; font-size: 9.5pt; color: #000000;">VERIFIED & SUBMITTED</div>
+          <div style="font-size: 8pt; color: #6B7280; text-transform: uppercase;">CAPSTONE PROJECT ARCHITECTURE</div>
         </div>
       </div>
     </div>
